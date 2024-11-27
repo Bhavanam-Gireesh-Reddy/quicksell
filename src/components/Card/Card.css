@@ -1,0 +1,56 @@
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    min-width: 250px;
+}
+
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+
+}
+
+
+.card-id {
+    font-size: 0.8rem;
+    color: #777;
+
+}
+
+
+.card-title {
+
+    margin: 0 0 8px 0;
+
+    font-weight: 500;
+
+
+}
+
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.assignee-avatar {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+}
+
+.tag {
+  margin-left: 4px;
+  font-size: 10px;
+}

@@ -1,0 +1,52 @@
+/* src/components/Board/Board.css */
+.kanban-board {
+
+    display: flex;
+
+    gap: 20px;
+    overflow-x: auto;
+    width: 100%;
+    padding: 20px;
+
+    box-sizing: border-box;
+    background-color: #F4F5F8;
+    min-height: 88vh;
+
+
+
+}
+
+
+
+
+/* Responsive styles */
+
+@media (min-width: 768px) {  /* For larger screens */
+
+
+
+    .kanban-board {
+
+
+        justify-content: flex-start;
+
+
+
+    }
+
+
+
+    .kanban-column {   /* Assuming you have a kanban-column class */
+
+
+        min-width: 300px;
+
+        max-width: 350px;
+
+        flex: 1 1 0px;  /* Columns expand equally, can shrink a bit */
+
+
+    }
+
+
+}

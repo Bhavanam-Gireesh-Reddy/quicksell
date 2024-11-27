@@ -1,0 +1,147 @@
+
+.column-container {
+
+    background-color: #F4F5F8;
+    border-radius: 5px;
+
+    padding: 15px;
+
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+
+    min-width: 280px;
+
+    box-sizing: border-box;
+
+    margin-bottom: 20px;
+
+
+}
+
+
+.column-header {
+
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 10px;
+
+
+
+}
+
+
+.status-icon {
+
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+
+
+}
+
+
+
+.column-title {
+
+  font-weight: bold;
+
+
+
+}
+
+.user-avatar {
+    width: 24px;  /* Adjust size as needed */
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 8px; 
+}
+
+
+.ticket-count {
+
+
+  margin-left: 8px;
+  background-color: #eee;
+
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+
+
+
+}
+
+.header{
+    display: flex;
+    align-items: center;
+}
+
+.header-left{
+    margin-left: 10px;
+    display: flex;
+    
+}
+
+.header-right{
+    display: flex;
+    margin-left: 133px;
+}
+
+.priority{
+    display: flex;
+    align-items: center;
+}
+
+.priority-left{
+    margin-left: 10px;
+    
+}
+
+.priority-right{
+    display: flex;
+    margin-left: 133px; 
+    /* 133 */
+}
+
+
+.add-button,
+.more-options {
+    margin-right: -1px;
+    margin-left: auto;
+    cursor: pointer;
+    padding: 0 5px;
+    border: 0;
+    background: 0;
+
+
+}
+
+
+.add-button:hover,
+.more-options:hover {
+
+  background-color: #f0f0f0;
+
+}
+
+
+
+
+
+/* Media query for responsiveness */
+
+@media (max-width: 768px) {
+
+
+    .column-container {
+
+        min-width: 0;
+        width: 100%;
+        margin-bottom: 15px;
+
+
+    }
+
+
+
+}

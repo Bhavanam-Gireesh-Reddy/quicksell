@@ -1,0 +1,165 @@
+/* src/responsive.css */
+
+/* Global Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+    .app-container {
+        padding: 10px;
+        overflow-x: hidden;
+    }
+
+    .kanban-board {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+        padding: 10px;
+        overflow-x: auto;
+        width: 100%;
+    }
+}
+
+/* Navbar Responsiveness */
+@media screen and (max-width: 600px) {
+    .navbar {
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .dropdown-container {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    .nav-top {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .dropdown-menu label,
+    .dropdown-menu select {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+/* Column Responsiveness */
+@media screen and (max-width: 768px) {
+    .column-container {
+        width: 100%;
+        min-width: 280px;
+        margin-bottom: 15px;
+    }
+
+    .column-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-left,
+    .priority-left {
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .header-right,
+    .priority-right {
+        margin-left: 0;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .ticket-count {
+        margin-left: 10px;
+    }
+}
+
+/* Card Responsiveness */
+@media screen and (max-width: 480px) {
+    .card {
+        min-width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+
+    .card-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tag-container {
+        margin-top: 5px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tag {
+        margin: 2px;
+    }
+}
+
+/* Scrollbar Styling for Better Mobile Experience */
+@media screen and (max-width: 1024px) {
+    .kanban-board {
+        scrollbar-width: thin;
+        scrollbar-color: #888 #f1f1f1;
+    }
+
+    .kanban-board::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .kanban-board::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    .kanban-board::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 4px;
+    }
+}
+
+/* Flexbox Adjustments for Responsiveness */
+@media screen and (max-width: 1024px) {
+    .card-list {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+/* Typography Adjustments */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .card-id {
+        font-size: 0.7rem;
+    }
+
+    .column-title {
+        font-size: 0.9rem;
+    }
+}
+
+/* Touch-Friendly Adjustments */
+@media (hover: none) and (pointer: coarse) {
+    .add-button,
+    .more-options {
+        padding: 10px;
+        min-touch-target-size: 44px;
+    }
+
+    .dropdown-button {
+        padding: 12px;
+    }
+}

@@ -1,0 +1,56 @@
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    min-height: 100vh;
+    padding: 20px; 
+    font-family: sans-serif;
+    background-color: #f8f8f8;
+}
+
+@media (max-width: 768px) {
+    .app-container {
+        padding: 10px; 
+        align-items: center; 
+    }
+}
+
+.dropdown-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto; 
+    margin: 10px auto; 
+    flex-wrap: wrap; 
+    background-color: #F8F9FB;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-left: 0;
+}
+
+
+@media (max-width: 768px) {
+    .dropdown-container {
+        flex-direction: column; 
+        align-items: flex-start;
+
+    }
+    .dropdown-container > * {
+        margin-bottom: 10px;
+    }
+}
+
+.loading, .error {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.loading {
+    color: #555;
+}
+
+.error {
+    color: red;
+}
